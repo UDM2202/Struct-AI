@@ -7,21 +7,21 @@ const HowItWorks = () => {
       icon: <FiEdit3 className="text-2xl" />,
       title: "Input",
       description: "Project parameters and Materials.",
-      details: "Type it. Import it. Your choice.",
+      details: "Type or Import it, Your choice.",
       color: "primary"
     },
     {
       icon: <FiCpu className="text-2xl" />,
       title: "Engine",
       description: "Eurocode logic runs. Rule-based. Reliable.",
-      details: "No AI black-box. Just engineering.",
+      details: "No AI black-box, Just engineering.",
       color: "primary"
     },
     {
       icon: <FiBarChart2 className="text-2xl" />,
       title: "Output",
-      description: "5 compliant designs. Cost efficiency + Carbon reduction.",
-      details: "Compare.  Decide. Choose.",
+      description: "5 compliant design options. Cost efficiency + Carbon reduction.",
+      details: "Compare,  Decide, and Choose.",
       color: "accent"
     },
     {
@@ -42,10 +42,10 @@ const HowItWorks = () => {
             <span className="text-sm font-semibold">Simple, Transparent, and Powerful.</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#02090d] mb-4">
-            Four steps. <span className="text-[#0A2F44]">Zero guesswork</span>
+            Four steps, <span className="text-[#0A2F44]">Zero guesswork.</span>
           </h2>
           <p className="text-xl text-[#4b5563]">
-            From parameters to optimized options. No fluff. Just engineering.
+            From parameters to optimized options: No fluff, Just engineering.
           </p>
         </div>
 

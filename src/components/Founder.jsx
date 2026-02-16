@@ -47,7 +47,7 @@ const Founder = () => {
                 <span className="text-sm font-semibold">Built by an engineer. For engineers.</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#02090d] mb-4">
-                Founder-Led. <span className="text-[#0A2F44]">Engineer-Driven.</span>
+                Founder-Led and <span className="text-[#0A2F44]">Engineer-Driven.</span>
               </h2>
               <p className="text-lg text-[#4b5563]">
                 Israel Ifeanyi MICHAEL brings formal training in structural engineering alongside practical site supervision experience. 

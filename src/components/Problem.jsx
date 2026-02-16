@@ -8,7 +8,7 @@ const Problem = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0A2F44] mb-4">
-            Spreadsheets are slow. <span className="text-[#0A2F44]">Over-design is costly.</span>
+            Spreadsheets are slow and <span className="text-[#0A2F44]">Over-design is costly.</span>
           </h2>
           <p className="text-xl text-[#4b5563]">
             UK structural engineering SMEs face recurring operational challenges that impact profits, timelines, and sustainability.

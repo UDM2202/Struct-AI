@@ -31,7 +31,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl text-neutral-600 max-w-lg">
-              Eurocode-compliant. Carbon-focused. 
+              Eurocode-compliant, Carbon-focused, and 
               <span className="font-semibold text-primary-600"> 3-clicks from slab to savings.</span>
             </p>
             

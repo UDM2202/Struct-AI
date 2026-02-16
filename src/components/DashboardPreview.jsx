@@ -15,7 +15,7 @@ const DashboardPreview = () => {
             In seconds.
           </h2>
           <p className="text-xl text-[#4b5563]">
-            Engineer inputs. System calculates. Engineer decides. 
+            Engineer inputs, System calculates, and Engineer decides. 
             <span className="font-semibold text-[#082636] block mt-2">
               Professional accountability is never automated.
             </span>
