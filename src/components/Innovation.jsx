@@ -80,7 +80,7 @@ const Innovation = () => {
         {/* Quote */}
         <div className="mt-16 text-center border-t border-[#0a3a55] pt-12">
           <p className="text-2xl italic text-[#99c2d6]">
-            "Most structural software gives you an answer. Struct-AI gives you the <span className="text-white font-semibold">best answer</span> for the budget, for the planet, and for Eurocode."
+            "Most structural software gives you an answer. StructAI gives you the <span className="text-white font-semibold">best answer</span> for the budget, for the planet, and for Eurocode."
           </p>
         </div>
       </div>

@@ -90,7 +90,7 @@ const Navbar = () => {
           <div className="w-10 h-10 bg-[#0A2F44] rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-xl">SA</span>
           </div>
-          <span className="font-bold text-xl text-[#04131b]">Struct-Al</span>
+          <span className="font-bold text-xl text-[#04131b]">StructAl</span>
         </a>
 
 {/* Desktop Navigation */}

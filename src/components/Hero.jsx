@@ -97,7 +97,7 @@ const Hero = () => {
       {/* Text Content */}
       <div className="text-center space-y-2 mt-8">
         <h3 className="text-2xl font-bold text-[#0A2F44]">
-          Structural AI
+          StructAI
         </h3>
         <p className="text-lg font-mono text-[#082636] font-semibold tracking-wider">
           CODE BASE
@@ -111,7 +111,7 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Bottom status bar - simplified */}
+      {/* Bottom status bar*/}
       <div className="mt-8 pt-4 border-t border-[#e5e7eb] flex justify-between items-center text-xs text-[#6b7280]">
         <span className="flex items-center">
           <span className="w-2 h-2 bg-[#2E7D32] rounded-full mr-2"></span>

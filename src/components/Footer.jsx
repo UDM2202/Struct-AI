@@ -55,7 +55,7 @@ const Footer = () => {
               <div className="w-10 h-10 bg-[var(--color-primary-500)] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">SA</span>
               </div>
-              <span className="font-bold text-xl">Struct-AI</span>
+              <span className="font-bold text-xl">StructAI</span>
             </div>
             <p className="text-[var(--color-primary-200)] mb-4 text-sm">
               AI-driven structural design optimisation for UK SMEs. Eurocode-compliant. Carbon-focused.
@@ -145,7 +145,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-[var(--color-primary-400)]">
-          <p>© 2026 Struct-AI. Eurocode compliance guaranteed. All rights reserved.</p>
+          <p>© 2026 StructAI. Eurocode compliance guaranteed. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
             <a href="#" className="hover:text-white transition-colors">Terms</a>
