@@ -6,12 +6,12 @@ const Innovation = () => {
     {
       icon: <FiFeather className="text-3xl" />,
       title: "Carbon as Currency",
-      description: "30-40% reduction isn't a target, it's the output. Embodied carbon calculated alongside cost, not as an afterthought."
+      description: "Carbon reduction isn't a target, it's the output. Embodied carbon calculated alongside cost, not as an afterthought."
     },
     {
       icon: <FiUsers className="text-3xl" />,
       title: "Destress Engineer",
-      description: "We're not replacing engineers. We're replacing spreadsheets. Professional accountability is never automated."
+      description: "We're not replacing engineers. Professional accountability is never automated."
     },
     {
       icon: <FiGlobe className="text-3xl" />,
@@ -27,7 +27,7 @@ const Innovation = () => {
     },
     {
       icon: <FiCpu />,
-      text: "Responsible AI—pattern recognition, not black-box decisions"
+      text: "Responsible AI pattern recognition, not black-box decisions"
     },
     {
       icon: <FiAward />,

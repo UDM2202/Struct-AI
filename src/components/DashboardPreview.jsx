@@ -188,118 +188,171 @@ const DashboardPreview = () => {
             </div>
 
             {/* Main Results Table */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border border-[#e5e7eb]">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="font-bold text-[#04131b]">Optimised Design Options</h3>
-                <span className="text-xs bg-[#f3f4f6] px-3 py-1 rounded-full">AI-Assisted Prioritisation</span>
-              </div>
-              
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead>
-                    <tr className="border-b-2 border-[#e5e7eb]">
-                      <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase">Option</th>
-                      <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase">Est. Cost</th>
-                      <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase">Carbon</th>
-                      <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase">Material</th>
-                      <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase">EC</th>
-                      <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-[#f3f4f6] hover:bg-[#e6f0f5] transition-colors">
-                      <td className="py-3 px-2 font-bold text-[#082636]">Option A</td>
-                      <td className="py-3 px-2">
-                        <span className="font-semibold">£455,000</span>
-                        <span className="text-xs text-[#2E7D32] block">11.7% lower</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">40% ✔</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">25% ✔</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <span className="text-[#2E7D32] text-lg">✓</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <input type="radio" name="design-option" className="w-4 h-4 accent-[#0A2F44]" />
-                      </td>
-                    </tr>
-                    <tr className="border-b border-[#f3f4f6] hover:bg-[#e6f0f5] transition-colors bg-[#e6f0f5]">
-                      <td className="py-3 px-2 font-bold text-[#082636]">Option B</td>
-                      <td className="py-3 px-2">
-                        <span className="font-semibold">£480,000</span>
-                        <span className="text-xs text-[#2E7D32] block">£35k saved</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">35% ✔</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">20% ✔</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <span className="text-[#2E7D32] text-lg">✓</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <input type="radio" name="design-option" defaultChecked className="w-4 h-4 accent-[#0A2F44]" />
-                      </td>
-                    </tr>
-                    <tr className="hover:bg-[#e6f0f5] transition-colors">
-                      <td className="py-3 px-2 font-bold text-[#6b7280]">Option C</td>
-                      <td className="py-3 px-2">
-                        <span className="font-semibold">£515,000</span>
-                        <span className="text-xs text-[#6b7280] block">Standard</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#f3f4f6] text-[#4b5563]">20% ✔</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#f3f4f6] text-[#4b5563]">0% ✔</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <span className="text-[#2E7D32] text-lg">✓</span>
-                      </td>
-                      <td className="py-3 px-2">
-                        <input type="radio" name="design-option" className="w-4 h-4 accent-[#0A2F44]" />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+<div className="bg-white rounded-xl shadow-lg p-6 border border-[#e5e7eb]">
+  <div className="flex items-center justify-between mb-4">
+    <h3 className="font-bold text-[#04131b]">Optimised Design Options (5 Generated)</h3>
+    <span className="text-xs bg-[#f3f4f6] px-3 py-1 rounded-full">AI-Assisted Prioritisation</span>
+  </div>
+  
+  <div className="overflow-x-auto">
+    <table className="w-full">
+      <thead>
+        <tr className="border-b-2 border-[#e5e7eb]">
+          <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase">Option</th>
+          <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase">Est. Cost</th>
+          <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase">Carbon</th>
+          <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase">Material</th>
+          <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase">EC</th>
+          <th className="text-left py-3 px-2 text-xs font-semibold text-[#6b7280] uppercase"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {/* Option A */}
+        <tr className="border-b border-[#f3f4f6] hover:bg-[#e6f0f5] transition-colors">
+          <td className="py-3 px-2 font-bold text-[#082636]">Option A</td>
+          <td className="py-3 px-2">
+            <span className="font-semibold">£455,000</span>
+            <span className="text-xs text-[#2E7D32] block">11.7% lower</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">40% ✔</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">25% ✔</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="text-[#2E7D32] text-lg">✓</span>
+          </td>
+          <td className="py-3 px-2">
+            <input type="radio" name="design-option" className="w-4 h-4 accent-[#0A2F44]" />
+          </td>
+        </tr>
+        
+        {/* Option B - Selected */}
+        <tr className="border-b border-[#f3f4f6] hover:bg-[#e6f0f5] transition-colors bg-[#e6f0f5]">
+          <td className="py-3 px-2 font-bold text-[#082636]">Option B</td>
+          <td className="py-3 px-2">
+            <span className="font-semibold">£480,000</span>
+            <span className="text-xs text-[#2E7D32] block">£35k saved</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">35% ✔</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">20% ✔</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="text-[#2E7D32] text-lg">✓</span>
+          </td>
+          <td className="py-3 px-2">
+            <input type="radio" name="design-option" defaultChecked className="w-4 h-4 accent-[#0A2F44]" />
+          </td>
+        </tr>
+        
+        {/* Option C */}
+        <tr className="border-b border-[#f3f4f6] hover:bg-[#e6f0f5] transition-colors">
+          <td className="py-3 px-2 font-bold text-[#082636]">Option C</td>
+          <td className="py-3 px-2">
+            <span className="font-semibold">£515,000</span>
+            <span className="text-xs text-[#6b7280] block">Standard</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#f3f4f6] text-[#4b5563]">20% ✔</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#f3f4f6] text-[#4b5563]">0% ✔</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="text-[#2E7D32] text-lg">✓</span>
+          </td>
+          <td className="py-3 px-2">
+            <input type="radio" name="design-option" className="w-4 h-4 accent-[#0A2F44]" />
+          </td>
+        </tr>
+        
+        {/* Option D - New */}
+        <tr className="border-b border-[#f3f4f6] hover:bg-[#e6f0f5] transition-colors">
+          <td className="py-3 px-2 font-bold text-[#082636]">Option D</td>
+          <td className="py-3 px-2">
+            <span className="font-semibold">£498,000</span>
+            <span className="text-xs text-[#2E7D32] block">£17k saved</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">28% ✔</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">15% ✔</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="text-[#2E7D32] text-lg">✓</span>
+          </td>
+          <td className="py-3 px-2">
+            <input type="radio" name="design-option" className="w-4 h-4 accent-[#0A2F44]" />
+          </td>
+        </tr>
+        
+        {/* Option E - New */}
+        <tr className="hover:bg-[#e6f0f5] transition-colors">
+          <td className="py-3 px-2 font-bold text-[#082636]">Option E</td>
+          <td className="py-3 px-2">
+            <span className="font-semibold">£468,000</span>
+            <span className="text-xs text-[#2E7D32] block">£47k saved</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">32% ✔</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">18% ✔</span>
+          </td>
+          <td className="py-3 px-2">
+            <span className="text-[#2E7D32] text-lg">✓</span>
+          </td>
+          <td className="py-3 px-2">
+            <input type="radio" name="design-option" className="w-4 h-4 accent-[#0A2F44]" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-              {/* Detailed View Card */}
-              <div className="mt-6 p-4 bg-[#f9fafb] rounded-lg border border-[#e5e7eb]">
-                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                  <div>
-                    <span className="text-xs font-semibold text-[#082636] uppercase">Selected</span>
-                    <h4 className="text-lg font-bold text-[#04131b]">Steel Frame - Option A</h4>
-                    <div className="flex flex-wrap items-center gap-2 mt-2">
-                      <span className="text-2xl font-bold text-[#082636]">£455,000</span>
-                      <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">40% Carbon Reduction</span>
-                      <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">25% Material Savings</span>
-                    </div>
-                  </div>
-                  <div className="flex space-x-2">
-                    <button className="bg-white border border-[#99c2d6] text-[#082636] px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#e6f0f5]">
-                      View Detailed Report
-                    </button>
-                    <button className="bg-[#0A2F44] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#082636] flex items-center">
-                      <FiDownload className="mr-1" /> Export
-                    </button>
-                  </div>
-                </div>
-              </div>
+  {/* Results Summary */}
+  <div className="mt-4 text-xs text-[#6b7280] flex justify-between items-center">
+    <span>Showing 5 of 5 generated options</span>
+    <span className="font-medium text-[#0A2F44]">Best cost-to-carbon ratio: Option A</span>
+  </div>
 
-              <div className="flex justify-between items-center mt-4 pt-2">
-                <button className="text-[#082636] font-medium flex items-center hover:text-[#0A2F44]">
-                  <span className="mr-1 text-xl">+</span> Generate More Designs
-                </button>
-                <button className="text-[#4b5563] font-medium flex items-center hover:text-[#082636]">
-                  Compare Options <FiBarChart2 className="ml-1" />
-                </button>
-              </div>
-            </div>
+  {/* Detailed View Card */}
+  <div className="mt-6 p-4 bg-[#f9fafb] rounded-lg border border-[#e5e7eb]">
+    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div>
+        <span className="text-xs font-semibold text-[#082636] uppercase">SELECTED</span>
+        <h4 className="text-lg font-bold text-[#04131b]">Steel Frame - Option B</h4>
+        <div className="flex flex-wrap items-center gap-2 mt-2">
+          <span className="text-2xl font-bold text-[#082636]">£480,000</span>
+          <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">35% Carbon Reduction</span>
+          <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-[#e8f5e9] text-[#1c4b1e]">20% Material Savings</span>
+        </div>
+      </div>
+      <div className="flex space-x-2">
+        <button className="bg-white border border-[#99c2d6] text-[#082636] px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#e6f0f5]">
+          View Detailed Report
+        </button>
+        <button className="bg-[#0A2F44] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#082636] flex items-center">
+          <FiDownload className="mr-1" /> Export
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div className="flex justify-between items-center mt-4 pt-2">
+    <button className="text-[#082636] font-medium flex items-center hover:text-[#0A2F44]">
+      <span className="mr-1 text-xl">+</span> Regenerate Options
+    </button>
+    <button className="text-[#4b5563] font-medium flex items-center hover:text-[#082636]">
+      Compare All Options <FiBarChart2 className="ml-1" />
+    </button>
+  </div>
+</div>
 
             {/* Engineer Review Notice */}
             <div className="bg-[#e6f0f5] border border-[#cce1eb] rounded-lg p-4 flex items-start">

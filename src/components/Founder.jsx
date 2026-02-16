@@ -16,24 +16,25 @@ const Founder = () => {
                 </div>
                 
                 <h3 className="text-2xl font-bold text-[#02090d] mb-2">Israel Ifeanyi MICHAEL</h3>
-                <p className="text-lg text-[#082636] mb-4">Founder / Structural Engineering & Product Lead</p>
+                <p className="text-lg text-[#082636] mb-4">Founder / Structural Engineer / Product Manager</p>
                 
                 <div className="flex flex-wrap gap-3 justify-center mb-6">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#cce1eb] text-[#061c28] border border-[#99c2d6]">MIStructE</span>
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#cce1eb] text-[#061c28] border border-[#99c2d6]">Design & Site Supervision</span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#cce1eb] text-[#061c28] border border-[#99c2d6]">B.ENG</span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#cce1eb] text-[#061c28] border border-[#99c2d6]">University of Benin</span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#cce1eb] text-[#061c28] border border-[#99c2d6]">MSc. International Project Management</span>
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#cce1eb] text-[#061c28] border border-[#99c2d6]">Northumbria University</span>
                 </div>
 
                 <p className="text-[#4b5563] italic">
-                  "I built this because I was tired of over-designing just to meet deadlines. 
-                  There is a smarter way—one that respects both the engineer's expertise and the planet's limits."
+                  "We built this because we were tired of over-designing just to meet deadlines. 
+                  There is a smarter way, one that respects both the engineer's expertise and the planet's limits."
                 </p>
 
-                <div className="mt-6 w-full border-t border-[#cce1eb] pt-6">
+                {/* <div className="mt-6 w-full border-t border-[#cce1eb] pt-6">
                   <p className="text-sm text-[#6b7280]">
                     ⏳ Full-time dedication from <span className="font-semibold text-[#082636]">January 14th, 2026</span>
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -49,7 +50,7 @@ const Founder = () => {
                 Founder-Led. <span className="text-[#0A2F44]">Engineer-Driven.</span>
               </h2>
               <p className="text-lg text-[#4b5563]">
-                Israel brings formal training in structural engineering alongside practical site supervision experience. 
+                Israel Ifeanyi MICHAEL brings formal training in structural engineering alongside practical site supervision experience. 
                 This combination enables a strong understanding of both design theory and real-world construction constraints.
               </p>
             </div>
@@ -89,7 +90,7 @@ const Founder = () => {
             {/* Team Section */}
             <div className="bg-[#f3f4f6] rounded-xl p-6 border border-[#e5e7eb]">
               <h4 className="font-bold text-[#04131b] mb-4 flex items-center">
-                <FiUsers className="mr-2" /> Core Team (Proposed)
+                <FiUsers className="mr-2" /> Core Team 
               </h4>
               <div className="space-y-4">
                 <div className="flex items-center justify-between">

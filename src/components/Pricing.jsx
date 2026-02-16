@@ -1,19 +1,19 @@
 import React from 'react';
-import { FiCheck, FiX, FiCpu, FiUsers, FiBarChart2, FiDownload } from 'react-icons/fi';
+import { FiCheck, FiX } from 'react-icons/fi';
 
 const Pricing = () => {
   const plans = [
     {
       name: "Starter",
-      price: "£49",
+      price: "£99.99",
       period: "/month",
       description: "For solo practitioners and small projects",
       features: [
         { name: "5 designs per month", included: true },
         { name: "Basic optimisation", included: true },
         { name: "Eurocode compliance", included: true },
-        { name: "PDF export", included: true },
-        { name: "Carbon analytics", included: false },
+        { name: "PDF/CSV/XSL export", included: true },
+        { name: "Carbon analytics", included: true },
         { name: "Team collaboration", included: false },
         { name: "API access", included: false },
       ],
@@ -22,128 +22,113 @@ const Pricing = () => {
     },
     {
       name: "Professional",
-      price: "£99",
+      price: "£249.99",
       period: "/month",
       description: "For growing SMEs and frequent users",
       features: [
         { name: "Unlimited designs", included: true },
         { name: "Advanced optimisation", included: true },
         { name: "Eurocode compliance", included: true },
-        { name: "PDF/CSV export", included: true },
+        { name: "PDF/CSV/XSL export", included: true },
         { name: "Carbon analytics", included: true },
-        { name: "Team collaboration (3 users)", included: true },
-        { name: "API access", included: false },
+        { name: "Team collaboration ", included: true },
+        { name: "API access", included: true },
       ],
       cta: "Start Free Trial",
       popular: true
-    },
-    {
-      name: "Enterprise",
-      price: "Custom",
-      period: "",
-      description: "For large practices and custom needs",
-      features: [
-        { name: "Unlimited everything", included: true },
-        { name: "Custom optimisation", included: true },
-        { name: "Eurocode compliance", included: true },
-        { name: "All export formats", included: true },
-        { name: "Advanced carbon analytics", included: true },
-        { name: "Unlimited team members", included: true },
-        { name: "API access", included: true },
-      ],
-      cta: "Contact Sales",
-      popular: false
     }
   ];
 
   return (
-    <section id="pricing" className="py-16 bg-[var(--color-neutral-50)]">
-      <div className="container-custom">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-2 bg-[var(--color-primary-100)] text-[var(--color-primary-700)] px-4 py-2 rounded-full mb-6">
-            <FiBarChart2 />
+    <section id="pricing" className="py-16 bg-[#f3f4f6]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center space-x-2 bg-[#cce1eb] text-[#082636] px-4 py-2 rounded-full mb-4">
             <span className="text-sm font-semibold">Simple, Transparent Pricing</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-primary-900)] mb-4">
-            Affordable for SMEs. <span className="text-[var(--color-primary-500)]">Valuable for all.</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#02090d] mb-3">
+            Choose the plan that fits your practice
           </h2>
-          <p className="text-xl text-[var(--color-neutral-600)]">
-            No hidden fees. No complex enterprise contracts. Just engineering tools that pay for themselves.
+          <p className="text-lg text-[#4b5563]">
+            No hidden fees. Cancel anytime.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {plans.map((plan, index) => (
-            <div 
-              key={index} 
-              className={`card relative ${
-                plan.popular 
-                  ? 'border-2 border-[var(--color-primary-500)] shadow-xl scale-105 lg:scale-110 z-10' 
-                  : 'border-[var(--color-neutral-200)]'
-              }`}
-            >
-              {plan.popular && (
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <span className="bg-[var(--color-accent-500)] text-white text-sm font-bold px-4 py-1 rounded-full">
-                    MOST POPULAR
-                  </span>
-                </div>
-              )}
-              
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-[var(--color-primary-800)] mb-2">{plan.name}</h3>
-                <div className="flex items-end justify-center">
-                  <span className="text-4xl font-bold text-[var(--color-primary-900)]">{plan.price}</span>
-                  <span className="text-[var(--color-neutral-500)] mb-1">{plan.period}</span>
-                </div>
-                <p className="text-[var(--color-neutral-500)] mt-2">{plan.description}</p>
-              </div>
-
-              <div className="space-y-3 mb-8">
-                {plan.features.map((feature, idx) => (
-                  <div key={idx} className="flex items-center">
-                    {feature.included ? (
-                      <FiCheck className="text-[var(--color-accent-500)] mr-3 flex-shrink-0" />
-                    ) : (
-                      <FiX className="text-[var(--color-neutral-400)] mr-3 flex-shrink-0" />
-                    )}
-                    <span className={feature.included ? 'text-[var(--color-neutral-700)]' : 'text-[var(--color-neutral-400)]'}>
-                      {feature.name}
+        {/* Two columns centered */}
+        <div className="flex justify-center">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl w-full">
+            {plans.map((plan, index) => (
+              <div 
+                key={index} 
+                className={`bg-white rounded-xl shadow-lg p-8 border ${
+                  plan.popular 
+                    ? 'border-[#0A2F44] ring-2 ring-[#0A2F44] ring-opacity-20 scale-105 z-10' 
+                    : 'border-[#e5e7eb]'
+                } relative transition-all hover:shadow-xl`}
+              >
+                {plan.popular && (
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <span className="bg-[#2E7D32] text-white text-xs font-bold px-4 py-1.5 rounded-full">
+                      MOST POPULAR
                     </span>
                   </div>
-                ))}
+                )}
+                
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold text-[#02090d] mb-2">{plan.name}</h3>
+                  <div className="flex items-end justify-center">
+                    <span className="text-4xl font-bold text-[#0A2F44]">{plan.price}</span>
+                    <span className="text-[#6b7280] mb-1">{plan.period}</span>
+                  </div>
+                  <p className="text-[#4b5563] mt-2 text-sm">{plan.description}</p>
+                </div>
+
+                <div className="space-y-3 mb-8">
+                  {plan.features.map((feature, idx) => (
+                    <div key={idx} className="flex items-center">
+                      {feature.included ? (
+                        <FiCheck className="text-[#2E7D32] mr-3 flex-shrink-0" />
+                      ) : (
+                        <FiX className="text-[#d1d5db] mr-3 flex-shrink-0" />
+                      )}
+                      <span className={feature.included ? 'text-[#374151]' : 'text-[#9ca3af]'}>
+                        {feature.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                <button 
+                  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all ${
+                    plan.popular
+                      ? 'bg-[#0A2F44] text-white hover:bg-[#082636]'
+                      : 'bg-white text-[#0A2F44] border-2 border-[#0A2F44] hover:bg-[#e6f0f5]'
+                  }`}
+                >
+                  {plan.cta}
+                </button>
+
+                {plan.name === "Starter" && (
+                  <p className="text-xs text-[#6b7280] text-center mt-4">
+                    Perfect for getting started
+                  </p>
+                )}
               </div>
-
-              <button 
-                className={`w-full py-3 px-6 rounded-lg font-semibold transition-all ${
-                  plan.popular
-                    ? 'bg-[var(--color-primary-500)] text-white hover:bg-[var(--color-primary-600)]'
-                    : 'bg-white text-[var(--color-primary-700)] border-2 border-[var(--color-primary-200)] hover:border-[var(--color-primary-500)]'
-                }`}
-              >
-                {plan.cta}
-              </button>
-
-              {plan.name === "Starter" && (
-                <p className="text-xs text-[var(--color-neutral-400)] text-center mt-4">
-                  * £49/month = less than 1 hour of an engineer's time
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
-
-        {/* Money-back guarantee */}
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center space-x-2 bg-white px-6 py-3 rounded-full shadow-soft">
-            <FiCheck className="text-[var(--color-accent-500)]" />
-            <span className="text-[var(--color-neutral-600)]">14-day money-back guarantee. No questions asked.</span>
+            ))}
           </div>
         </div>
 
+        {/* Money-back guarantee */}
+        {/* <div className="mt-12 text-center">
+          <div className="inline-flex items-center space-x-2 bg-white px-6 py-3 rounded-full shadow-soft">
+            <FiCheck className="text-[#2E7D32]" />
+            <span className="text-[#4b5563]">14-day money-back guarantee. No questions asked.</span>
+          </div>
+        </div> */}
+
         {/* Educational pricing note */}
-        <div className="mt-8 text-center text-sm text-[var(--color-neutral-400)]">
-          <p>🏛️ Educational and research discounts available. <a href="#contact" className="text-[var(--color-primary-500)] hover:underline">Contact us</a></p>
+        <div className="mt-8 text-center text-sm text-[#6b7280]">
+          <p>🏛️ Educational and research discounts available. <a href="#contact" className="text-[#0A2F44] hover:underline">Contact us</a></p>
         </div>
       </div>
     </section>

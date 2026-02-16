@@ -6,8 +6,8 @@ const HowItWorks = () => {
     {
       icon: <FiEdit3 className="text-2xl" />,
       title: "Input",
-      description: "Project parameters. Spans. Loads. Materials.",
-      details: "Type it. Import it. Your way.",
+      description: "Project parameters and Materials.",
+      details: "Type it. Import it. Your choice.",
       color: "primary"
     },
     {
@@ -20,15 +20,15 @@ const HowItWorks = () => {
     {
       icon: <FiBarChart2 className="text-2xl" />,
       title: "Output",
-      description: "3-5 compliant designs. Cost + Carbon savings.",
-      details: "Compare. Choose. Decide.",
+      description: "5 compliant designs. Cost efficiency + Carbon reduction.",
+      details: "Compare.  Decide. Choose.",
       color: "accent"
     },
     {
       icon: <FiDownload className="text-2xl" />,
       title: "Export",
-      description: "Save as PDF/CSV. Share with client.",
-      details: "Own your work. Always.",
+      description: "Save as PDF/CSV/XSL. Share with client.",
+      details: "Own your work.",
       color: "primary"
     }
   ];
@@ -39,10 +39,10 @@ const HowItWorks = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center space-x-2 bg-[#cce1eb] text-[#082636] px-4 py-2 rounded-full mb-6">
             <FiCpu />
-            <span className="text-sm font-semibold">Simple. Transparent. Powerful.</span>
+            <span className="text-sm font-semibold">Simple, Transparent, and Powerful.</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#02090d] mb-4">
-            Four steps. <span className="text-[#0A2F44]">Zero guesswork.</span>
+            Four steps. <span className="text-[#0A2F44]">Zero guesswork</span>
           </h2>
           <p className="text-xl text-[#4b5563]">
             From parameters to optimized options. No fluff. Just engineering.
@@ -96,8 +96,8 @@ const HowItWorks = () => {
             <div>
               <h4 className="text-lg font-bold text-[#02090d] mb-2">Minimum Viable Product — Done Right</h4>
               <p className="text-[#4b5563]">
-                We're starting with the core: <span className="font-semibold text-[#0A2F44]">Input → Process → Display → Save</span>. 
-                No complex import features yet. Just reliable, Eurocode-compliant calculations that work.
+                The core: <span className="font-semibold text-[#0A2F44]">Input → Process → Display → Save</span>. 
+                No complex import features. Just reliable, Eurocode-compliant calculations that work.
               </p>
             </div>
           </div>

@@ -46,7 +46,7 @@ const Hero = () => {
               </a>
             </div>
 
-            <div className="flex items-center space-x-6 pt-6">
+            {/* <div className="flex items-center space-x-6 pt-6">
               <div className="flex -space-x-2">
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="w-10 h-10 rounded-full bg-primary-200 border-2 border-white flex items-center justify-center text-primary-700 font-semibold text-xs">
@@ -58,64 +58,70 @@ const Hero = () => {
                 <p className="font-semibold text-neutral-800">✦ Used by 40+ UK SME practices</p>
                 <p className="text-sm text-neutral-500 mb-4">Trusted by engineers nationwide</p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column - Input Form Preview */}
-          <div className="relative lg:block hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 to-accent-500/10 rounded-3xl blur-3xl"></div>
-            <div className="relative bg-white rounded-2xl shadow-2xl border border-neutral-200 p-6 transform rotate-1 hover:rotate-0 transition-transform duration-500">
-              <div className="flex items-center space-x-2 mb-6 pb-4 border-b border-neutral-100">
-                <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                <span className="ml-2 text-sm text-neutral-400">new-project.design</span>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm font-medium text-neutral-600">Project Type</span>
-                  <div className="flex space-x-2">
-                    <span className="badge badge-blue">Residential</span>
-                    <span className="badge bg-neutral-100 text-neutral-600">Commercial</span>
-                    <span className="badge bg-neutral-100 text-neutral-600">Industrial</span>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <p className="text-xs text-neutral-500 mb-1">Span Lengths</p>
-                    <div className="bg-neutral-50 rounded-lg p-3 border border-neutral-200">
-                      <span className="text-lg font-semibold text-primary-700">8 m</span>
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-xs text-neutral-500 mb-1">Storey Height</p>
-                    <div className="bg-neutral-50 rounded-lg p-3 border border-neutral-200">
-                      <span className="text-lg font-semibold text-primary-700">3.0 m</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex justify-between pt-2">
-                  <div>
-                    <p className="text-xs text-neutral-500">Material</p>
-                    <p className="font-semibold text-neutral-800">Concrete C30/37</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-xs text-neutral-500">Budget Limit</p>
-                    <p className="font-semibold text-accent-600">£500,000</p>
-                  </div>
-                </div>
-
-                <div className="pt-4">
-                  <div className="w-full bg-primary-500 text-white rounded-lg py-3 px-4 text-center font-semibold">
-                    Run Optimisation →
-                  </div>
-                </div>
-              </div>
-            </div>
+         {/* Right Column - Structural AI Code Base */}
+<div className="relative lg:block hidden">
+  {/* Main container - removed background glow */}
+  <div className="relative bg-white rounded-2xl shadow-2xl border border-[#e5e7eb] overflow-hidden transform hover:scale-105 transition-transform duration-500">
+    
+    {/* Header - matching the Sign Up Free button color */}
+    <div className="bg-[#0A2F44] p-4"> {/* Changed to match button color */}
+      <div className="flex items-center justify-between">
+        <div className="flex items-center space-x-2">
+          <div className="w-3 h-3 bg-red-400 rounded-full"></div>
+          <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+          <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+        </div>
+        <span className="text-[#99c2d6] text-xs font-mono">v1.0</span>
+      </div>
+    </div>
+    
+    {/* Main content */}
+    <div className="p-8">
+      {/* Central Logo/Icon */}
+      <div className="relative flex justify-center my-6">
+        {/* Orbiting circle - only animation */}
+        <div className="absolute w-40 h-40 border-2 border-[#2E7D32] rounded-full border-dashed animate-spin-slow"></div>
+        
+        {/* Main circle */}
+        <div className="relative w-32 h-32 bg-gradient-to-br from-[#0A2F44] to-[#082636] rounded-full flex items-center justify-center shadow-xl">
+          <div className="text-center">
+            <span className="text-white text-3xl font-bold block leading-tight">SA</span>
           </div>
+        </div>
+      </div>
+      
+      {/* Text Content */}
+      <div className="text-center space-y-2 mt-8">
+        <h3 className="text-2xl font-bold text-[#0A2F44]">
+          Structural AI
+        </h3>
+        <p className="text-lg font-mono text-[#082636] font-semibold tracking-wider">
+          CODE BASE
+        </p>
+        
+        {/* Simple divider */}
+        <div className="flex items-center justify-center space-x-2 pt-2">
+          <div className="w-12 h-0.5 bg-[#0A2F44]"></div>
+          <span className="text-xs text-[#6b7280]">v1.0</span>
+          <div className="w-12 h-0.5 bg-[#2E7D32]"></div>
+        </div>
+      </div>
+      
+      {/* Bottom status bar - simplified */}
+      <div className="mt-8 pt-4 border-t border-[#e5e7eb] flex justify-between items-center text-xs text-[#6b7280]">
+        <span className="flex items-center">
+          <span className="w-2 h-2 bg-[#2E7D32] rounded-full mr-2"></span>
+          AI Engine Ready
+        </span>
+        <span>Eurocode EC2/EC3</span>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </section>

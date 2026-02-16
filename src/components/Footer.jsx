@@ -129,10 +129,10 @@ const Footer = () => {
 
         {/* Contact Info Bar */}
         <div className="grid md:grid-cols-3 gap-4 py-6 border-t border-[var(--color-primary-800)] border-b border-[var(--color-primary-800)] mb-6">
-          <div className="flex items-center space-x-3">
+          {/* <div className="flex items-center space-x-3">
             <FiMapPin className="text-[var(--color-primary-400)] text-xl" />
             <span className="text-[var(--color-primary-200)] text-sm">12103/First Street, London, UK</span>
-          </div>
+          </div> */}
           <div className="flex items-center space-x-3">
             <FiPhone className="text-[var(--color-primary-400)] text-xl" />
             <span className="text-[var(--color-primary-200)] text-sm">+44 7777 240590</span>

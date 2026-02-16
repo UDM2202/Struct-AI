@@ -35,7 +35,7 @@ const Problem = () => {
             </div>
             <h3 className="text-xl font-bold text-[#04131b] mb-3">Conservative Over-Design</h3>
             <p className="text-[#4b5563]">
-              To manage liability risks and time constraints, engineers over-specify materials—driving up costs and embodied carbon.
+              To manage liability risks and time constraints, engineers over-specify materials, driving up costs and embodied carbon.
             </p>
           </div>
 
@@ -46,13 +46,13 @@ const Problem = () => {
             </div>
             <h3 className="text-xl font-bold text-[#04131b] mb-3">Inequality in Tools</h3>
             <p className="text-[#4b5563]">
-              Advanced optimisation tools are locked behind high paywalls, accessible only to large consultancies—leaving SMEs behind.
+              Advanced optimisation tools are locked behind high paywalls, accessible only to large consultancies, leaving SMEs behind.
             </p>
           </div>
         </div>
 
         {/* Stats Bar */}
-        <div className="mt-16 bg-white rounded-2xl shadow-lg p-8 border border-[#e5e7eb]">
+        {/* <div className="mt-16 bg-white rounded-2xl shadow-lg p-8 border border-[#e5e7eb]">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="flex items-center justify-center space-x-2 mb-2">
@@ -76,7 +76,7 @@ const Problem = () => {
               <p className="text-[#4b5563]">Saved per project with optimisation</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Quote */}
         <div className="mt-12 text-center">
