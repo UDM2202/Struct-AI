@@ -13,21 +13,21 @@ const HowItWorks = () => {
     {
       icon: <FiCpu className="text-2xl" />,
       title: "Engine",
-      description: "Eurocode logic runs. Rule-based. Reliable.",
+      description: "Eurocode logic runs, Rule-based, and Reliable.",
       details: "No AI black-box, Just engineering.",
       color: "primary"
     },
     {
       icon: <FiBarChart2 className="text-2xl" />,
       title: "Output",
-      description: "5 compliant design options. Cost efficiency + Carbon reduction.",
+      description: "5 compliant design options, Cost efficiency and Carbon reduction.",
       details: "Compare,  Decide, and Choose.",
       color: "accent"
     },
     {
       icon: <FiDownload className="text-2xl" />,
       title: "Export",
-      description: "Save as PDF/CSV/XSL. Share with client.",
+      description: "Save as PDF/CSV/XSL and Share with client.",
       details: "Own your work.",
       color: "primary"
     }
@@ -97,7 +97,7 @@ const HowItWorks = () => {
               <h4 className="text-lg font-bold text-[#02090d] mb-2">Minimum Viable Product — Done Right</h4>
               <p className="text-[#4b5563]">
                 The core: <span className="font-semibold text-[#0A2F44]">Input → Process → Display → Save</span>. 
-                No complex import features. Just reliable, Eurocode-compliant calculations that work.
+                No complex import features, Just reliable, and Eurocode-compliant calculations that work.
               </p>
             </div>
           </div>
