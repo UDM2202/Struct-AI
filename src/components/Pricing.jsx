@@ -44,7 +44,7 @@ const Pricing = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center space-x-2 bg-[#cce1eb] text-[#082636] px-4 py-2 rounded-full mb-4">
-            <span className="text-sm font-semibold">Simple, Transparent Pricing</span>
+            <span className="text-sm font-semibold">Simple and Transparent Pricing</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#02090d] mb-3">
             Choose the plan that fits your practice

@@ -44,7 +44,7 @@ const Founder = () => {
             <div>
               <div className="inline-flex items-center space-x-2 bg-[#cce1eb] text-[#082636] px-4 py-2 rounded-full mb-4">
                 <FiAward />
-                <span className="text-sm font-semibold">Built by an engineer, git For engineers.</span>
+                <span className="text-sm font-semibold">Built by an engineer,  For engineers.</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#02090d] mb-4">
                 Founder-Led and <span className="text-[#0A2F44]">Engineer-Driven.</span>
