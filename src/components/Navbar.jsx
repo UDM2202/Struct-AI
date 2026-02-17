@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +12,6 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
       
-      // Don't update active link while clicking (prevents blinking)
       if (isClicking) return;
       
       const sections = [
@@ -54,10 +52,10 @@ const Navbar = () => {
   const handleLinkClick = (e, href) => {
     e.preventDefault();
     
-    // Set clicking state to true to prevent scroll interference
+    
     setIsClicking(true);
     
-    // Immediately update active link
+   
     setActiveLink(href);
     
     const element = document.querySelector(href);
@@ -93,67 +91,59 @@ const Navbar = () => {
           <span className="font-bold text-xl text-[#04131b]">StructAl</span>
         </a>
 
-{/* Desktop Navigation */}
-<div className="hidden md:flex items-center">
-  {navLinks.map((link) => (
-    <a
-      key={link.name}
-      href={link.href}
-      onClick={(e) => handleLinkClick(e, link.href)}
-      className={`relative px-4 py-2 mx-1 font-medium transition-colors duration-200 ${
-        activeLink === link.href 
-          ? 'text-white' 
-          : 'text-[#4b5563] hover:text-[#0A2F44]'
-      }`}
-      style={{
-        position: 'relative',
-        zIndex: 10
-      }}
-    >
-      {link.name}
-      {activeLink === link.href && (
-        <span 
-          className="absolute inset-0 bg-[#0A2F44] rounded-lg"
-          style={{
-            zIndex: -1,
-            top: '0',
-            left: '0',
-            right: '0',
-            bottom: '0',
-            width: '100%',
-            height: '100%'
-          }}
-        />
-      )}
-    </a>
-  ))}
-  
-  {/* Sign Up Button */}
-  <a 
-    href="#signup" 
-    onClick={(e) => {
-      e.preventDefault();
-      alert('Sign up modal would open here');
-    }} 
-    className="ml-4 bg-[#0A2F44] text-white font-semibold py-2.5 px-6 rounded-lg hover:bg-[#082636] transition-all shadow-soft"
-    style={{ zIndex: 10 }}
-  >
-    Sign Up Free
-  </a>
-  
-  {/* Login Link */}
-  <a 
-    href="#login" 
-    onClick={(e) => {
-      e.preventDefault();
-      alert('Login modal would open here');
-    }} 
-    className="ml-2 text-[#4b5563] hover:text-[#0A2F44] font-medium px-4 py-2"
-    style={{ zIndex: 10 }}
-  >
-    Login
-  </a>
-</div>
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={(e) => handleLinkClick(e, link.href)}
+              className={`relative px-4 py-2 mx-1 font-medium transition-colors duration-200 ${
+                activeLink === link.href 
+                  ? 'text-white' 
+                  : 'text-[#4b5563] hover:text-[#0A2F44]'
+              }`}
+              style={{
+                position: 'relative',
+                zIndex: 10
+              }}
+            >
+              {link.name}
+              {activeLink === link.href && (
+                <span 
+                  className="absolute inset-0 bg-[#0A2F44] rounded-lg"
+                  style={{
+                    zIndex: -1,
+                    top: '0',
+                    left: '0',
+                    right: '0',
+                    bottom: '0',
+                    width: '100%',
+                    height: '100%'
+                  }}
+                />
+              )}
+            </a>
+          ))}
+          
+          {/* Sign Up Button */}
+          <a 
+            href="https://struct-ai-app.vercel.app/signup" 
+            className="ml-4 bg-[#0A2F44] text-white font-semibold py-2.5 px-6 rounded-lg hover:bg-[#082636] transition-all shadow-soft"
+            style={{ zIndex: 10 }}
+          >
+            Sign Up Free
+          </a>
+          
+          {/* Login Link */}
+          <a 
+            href="https://struct-ai-app.vercel.app/login" 
+            className="ml-2 text-[#4b5563] hover:text-[#0A2F44] font-medium px-4 py-2"
+            style={{ zIndex: 10 }}
+          >
+            Login
+          </a>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -183,25 +173,20 @@ const Navbar = () => {
               </a>
             ))}
             <div className="flex flex-col space-y-3 pt-2 border-t border-[#e5e7eb]">
+              {/* Mobile Sign Up */}
               <a 
-                href="#signup" 
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert('Sign up modal would open here');
-                  setIsOpen(false);
-                }} 
+                href="https://struct-ai-app.vercel.app/signup" 
                 className="bg-[#0A2F44] text-white font-semibold py-3 px-6 rounded-lg text-center hover:bg-[#082636]"
+                onClick={() => setIsOpen(false)}
               >
                 Sign Up Free
               </a>
+              
+              {/* Mobile Login */}
               <a 
-                href="#login" 
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert('Login modal would open here');
-                  setIsOpen(false);
-                }} 
+                href="https://struct-ai-app.vercel.app/login" 
                 className="text-[#4b5563] hover:text-[#0A2F44] font-medium text-center py-2"
+                onClick={() => setIsOpen(false)}
               >
                 Login
               </a>
